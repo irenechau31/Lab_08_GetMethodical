@@ -12,10 +12,10 @@ public class Reggie {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String SSN = SafeInput.getRegExString(in, "Enter your SSN (XXX-XX-XXXX)", "\\d{3}-\\d{2}-\\d{4}$");
-        System.out.println("SSN number: " + SSN);
-        String MID = SafeInput.getRegExString(in, "Enter your UC Student M number (MXXXXX)", "^(M|m)\\d{5}$");
-        System.out.println("UC Student M number: " + MID);
+        String socialSecurityNumber = SafeInput.getRegExString(in, "Enter your SSN (XXX-XX-XXXX)", "\\d{3}-\\d{2}-\\d{4}$");
+        System.out.println("SSN number: " + socialSecurityNumber);
+        String studentID = SafeInput.getRegExString(in, "Enter your UC Student M number (MXXXXX)", "^(M|m)\\d{5}$");
+        System.out.println("UC Student M number: " + studentID);
         System.out.println("Menu choices: " + menu);
         String menuChoice = SafeInput.getRegExString(in, "Enter menu choice (O, S, V, Q) ", "^[OoSsVvQq]$");
         System.out.println("Entered menu choice: " + menuChoice);
